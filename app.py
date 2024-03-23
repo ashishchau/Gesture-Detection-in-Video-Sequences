@@ -24,7 +24,7 @@ model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy']
 
 # Load the desired gesture representation (input image or short video clip)
 desired_gesture_img = cv2.imread(
-    'vecteezy_slow-motion-asian-sportswoman-wearing-black-sportswear_8777747.mp4')  # Replace 'desired_gesture_image.jpg' with your input image file
+    'vecteezy_slow-motion-asian-sportswoman-wearing-black-sportswear_8777747.mp4')  
 
 # Define the threshold for considering a gesture as detected
 confidence_threshold = 0.5
@@ -37,7 +37,7 @@ font_color = (0, 255, 0)
 line_type = 2
 
 # Open the test video
-cap = cv2.VideoCapture('vecteezy_slow-motion-asian-sportswoman-wearing-black-sportswear_8777747.mp4')  # Replace 'test_video.mp4' with your test video file
+cap = cv2.VideoCapture('vecteezy_slow-motion-asian-sportswoman-wearing-black-sportswear_8777747.mp4')  
 frame_width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
 frame_height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
 
